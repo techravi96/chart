@@ -3,11 +3,12 @@
 import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from "chart.js";
 import ChartDataLabels from "chartjs-plugin-datalabels";
-import { Box} from "@mui/material";
+import { Box} from "@mui/material"; 
 import { useRef } from "react";
 import zoomPlugin from "chartjs-plugin-zoom";
 
-// ✅ Register Plugins
+// ✅ Register Plugins dsfsdf
+// ✅ Register Plugins dsfsdf
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ChartDataLabels, zoomPlugin);
 
 const fullLabels = [
