@@ -116,7 +116,7 @@ Object.keys(scales).forEach(scale => Object.assign(scales[scale]));
 export default function BarChart3() {
   const chartRef = useRef(null);
   const rowHeight = 40;
-  const chartHeight = Math.max(fullLabels.length * rowHeight, 400);
+  // const chartHeight = Math.max(fullLabels.length * rowHeight, 400);
   
   return (
    
