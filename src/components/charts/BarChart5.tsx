@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useState, useRef, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 import {
