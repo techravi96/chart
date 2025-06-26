@@ -119,9 +119,9 @@ export default function BarChart3() {
   // const chartHeight = Math.max(fullLabels.length * rowHeight, 400);
   
   return (
-   
     <Box sx={{ height: "500px", overflowY: "auto", position: "relative" }}>
         <Bar ref={chartRef} data={data} options={options} />
+      
       </Box>
   );
 }

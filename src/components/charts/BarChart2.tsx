@@ -61,6 +61,7 @@ const options = {
         const label = fullLabels[context.dataIndex];
           return label;
       },
+      clip: false,
     },
     tooltip: {
       callbacks: {
@@ -99,7 +100,7 @@ export default function BarChart2() {
   const chartHeight = Math.max(fullLabels.length * rowHeight, 400);
   
   return (
-    <Box sx={{ height:'400px', overflowY: 'scroll'}}>
+    <Box sx={{ height:'400px', overflowY: 'auto', position: 'relative',  WebkitOverflowScrolling:'touch', touchAction: "pan-y", pr: 3,}}>
       <Button variant="outlined"  onClick={() => chartRef.current?.resetZoom()}>Reset Zoom</Button>
        {fullLabels.length > 10 && (
         <Button variant="outlined" sx={{ mt: 2 , float:'right'}} onClick={() => setOpen(true)}>
